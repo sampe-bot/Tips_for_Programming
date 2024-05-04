@@ -12,7 +12,8 @@
 - wget<br>
 ```conda install -c conda-forge python-wget```
 #### 仮想環境の構築
-- conda create -n <vir_env>
+- Pythonのバージョン指定あり
+```conda create -n <vir_env> python=3.X```
 
 #### 新規カーネルの追加
 - 新たに作成した仮想環境<vir_env>に入り以下のコマンドを実行する<br>
@@ -21,6 +22,9 @@
 
 - カーネルリストの確認<br>
 ```jupyter kernelspec list```
+
+- カーネルの削除
+```jupyter kernelspec uninstall <KERNEL_NAME>```
 
 #### 仮想環境の保存、再構築 
 - 参考にした記事 : [Qiita](https://qiita.com/ozaki_physics/items/13466d6d1954a0afeb3b)
